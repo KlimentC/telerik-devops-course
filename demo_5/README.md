@@ -2,6 +2,8 @@
 
 ## Introduction to networking
 
+Set 'docker' on your workstation resolv.conf
+
 Publish exposed port.
 
 ```bash

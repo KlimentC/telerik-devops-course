@@ -14,6 +14,8 @@ The demo will be performed on Ubuntu 20.04.3 LTS with the following packages:
 - [git](https://git-scm.com/)
 - [tree](http://mama.indstate.edu/users/ice/tree/)
 
+sudo snap install docker jq dive nmap tree
+
 ## Demo content
 
 1. [Introduction to docker cli](./demo_1/README.md)
