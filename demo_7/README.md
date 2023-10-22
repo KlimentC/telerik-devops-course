@@ -9,6 +9,7 @@ _Note: Make sure to execute the below commands in the demo directory._
 
 ```bash
 docker build -t api .
+alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 dive api
 docker run --name api -d -p 80:4000 api
 curl -s 'http://localhost/' -X POST -H 'content-type: application/json' --data '{ "query": "{ teams { id name members department } }" }' | jq
