@@ -2,7 +2,7 @@
 
 ## Introduction to networking
 
-Set 'docker' on your workstation resolv.conf
+Set 'dockerhost' on your workstation resolv.conf
 
 Publish exposed port.
 
@@ -14,8 +14,8 @@ docker rm -f nginx
 docker run --name nginx -d -p 80:80 nginx:1.20-alpine
 docker ps
 nmap localhost
-nmap -Pn -F docker # On the workstation
-curl http://docker # On the workstation
+nmap -Pn -F dockerhost # On the workstation
+curl http://dockerhost # On the workstation
 docker rm -f nginx
 ```
 
